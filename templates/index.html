@@ -1,0 +1,85 @@
+{% load static %}
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Salvia Firna</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">Salvia Firna</div>
+
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Skill</a></li>
+        <li><a href="#">Software</a></li>
+        <li><a href="#">Education</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+      <a href="#" class="btn-nav">Contact Me</a>
+    </nav>
+
+    <!-- Main Section -->
+    <section class="hero">
+      <!-- Left Content -->
+      <div class="hero-text">
+        <h3>Hello, I'm</h3>
+        <h1>Salvia Firna</h1>
+        <h2>Data Enthusiast</h2>
+
+        <p>
+          Saya adalah mahasiswa Sains Data yang memiliki minat dalam Pengolahan
+          Data, Visualisasi Informasi, serta Desain website yang elegan dan
+          interaktif.
+        </p>
+
+        <!-- About -->
+        <div class="info-box">
+          <h4>About</h4>
+          <p>
+            Aktif mempelajari analisis data, desain web, dan pemanfaatan
+            teknologi digital untuk solusi modern.
+          </p>
+        </div>
+
+        <!-- Skill -->
+        <div class="info-box">
+          <h4>Skill</h4>
+          <p>HTML, CSS, Python, SQL, JavaScript, dan Data Visualization</p>
+        </div>
+
+        <!-- Software -->
+        <div class="info-box">
+          <h4>Software</h4>
+          <p>VS Code, Excel, Google Colab, Jupyter Notebook dan Canva</p>
+        </div>
+
+        <!-- Education -->
+        <div class="info-box">
+          <h4>Education</h4>
+          <p>S1 Sains Data — Universitas Islam Negeri Salatiga</p>
+        </div>
+
+        <!-- Contact -->
+        <div class="contact">
+          <h4>Contact</h4>
+          <p>Instagram : salvia_firna</p>
+          <p>WhatsApp : 085859533066</p>
+          <p>Email : salviafirna@gmail.com</p>
+        </div>
+      </div>
+
+      <!-- Right Image -->
+      <div class="hero-image">
+        <div class="image-frame">
+          <img src="{% static 'images/foto.jpeg' %}" alt="Profile" />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

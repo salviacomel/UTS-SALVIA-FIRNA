@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(to right, #021526, #032b43, #04364a);
+  color: #ffffff;
+  height: 100vh;
+  overflow: hidden;
+  padding: 20px 60px;
+}
+
+/* ======================
+   NAVBAR
+====================== */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 12px 28px;
+  background: rgba(3, 22, 40, 0.85);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 234, 255, 0.06);
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 28px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #d8f3ff;
+  font-weight: 500;
+  font-size: 14px;
+  position: relative;
+  transition: 0.3s;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #00eaff;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.nav-links a:hover {
+  color: #00eaff;
+}
+
+.btn-nav {
+  text-decoration: none;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 500;
+  transition: 0.3s;
+  box-shadow: 0 8px 20px rgba(0, 198, 255, 0.2);
+}
+
+.btn-nav:hover {
+  background: linear-gradient(to right, #009dff, #005eff);
+  transform: translateY(-2px);
+}
+
+/* ======================
+   HERO SECTION
+====================== */
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: calc(100vh - 100px);
+}
+
+/* ======================
+   LEFT CONTENT
+====================== */
+
+.hero-text {
+  width: 58%;
+}
+
+.hero-text h3 {
+  font-size: 20px;
+  color: #7fe9ff;
+  margin-bottom: 4px;
+}
+
+.hero-text h1 {
+  font-size: 46px;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.hero-text h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #9be7ff;
+  position: relative;
+}
+
+.hero-text h2::after {
+  content: "";
+  width: 70px;
+  height: 3px;
+  background: #00eaff;
+  display: block;
+  margin-top: 6px;
+  border-radius: 20px;
+}
+
+.hero-text p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #d6ecf5;
+}
+
+/* ======================
+   INFO BOX
+====================== */
+
+.info-box,
+.contact {
+  margin-top: 10px;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 10px 15px;
+  border-radius: 14px;
+  box-shadow: 0 6px 15px rgba(0, 234, 255, 0.05);
+  border-left: 4px solid #00eaff;
+}
+
+.info-box h4,
+.contact h4 {
+  color: #7fe9ff;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.info-box p,
+.contact p {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #d6ecf5;
+}
+
+.contact {
+  padding-bottom: 12px;
+}
+
+/* ======================
+   RIGHT IMAGE
+====================== */
+
+.hero-image {
+  width: 38%;
+  display: flex;
+  justify-content: center;
+}
+
+.image-frame {
+  width: 340px;
+  height: 340px;
+  background: radial-gradient(circle, #0a4d68, #032b43);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow:
+    0 0 40px rgba(0, 234, 255, 0.18),
+    0 0 80px rgba(128, 0, 255, 0.1);
+  position: relative;
+}
+
+.image-frame::before {
+  content: "";
+  position: absolute;
+  width: 370px;
+  height: 370px;
+  border: 2px solid rgba(0, 234, 255, 0.35);
+  border-radius: 50%;
+}
+
+.image-frame img {
+  width: 310px;
+  height: 310px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 50%;
+  border: 5px solid rgba(255, 255, 255, 0.9);
+  z-index: 2;
+  box-shadow: 0 0 30px rgba(0, 234, 255, 0.18);
+}
