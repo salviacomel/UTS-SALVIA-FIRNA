@@ -23,10 +23,10 @@ body {
   align-items: center;
   margin-bottom: 20px;
   padding: 12px 28px;
-  background: rgba(3, 22, 40, 0.85);
+  background: rgba(0, 234, 255, 0.128);
   backdrop-filter: blur(12px);
   border-radius: 20px;
-  box-shadow: 0 8px 25px rgba(0, 234, 255, 0.06);
+  box-shadow: 0 8px 25px rgba(7, 137, 149, 0.094);
 }
 
 .logo {
