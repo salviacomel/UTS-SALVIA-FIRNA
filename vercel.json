@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "UTSENJELA/asgi.py",
+      "src": "salvia_firna/wsgi.py",
       "use": "@vercel/python"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "UTSENJELA/asgi.py"
+      "dest": "salvia_firna/wsgi.py"
     }
   ]
 }
